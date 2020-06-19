@@ -1,0 +1,27 @@
+<%- include ('../partials/header') %>
+
+<div class="container my-5">
+  <!-- Add in your own product display -->
+  <header>
+    <h1><%- product.title %> </h1>
+    <br>
+    <small>
+      <%- product.updateAt.toLocaleString("en-CA") %>
+    </small>
+  </header>
+  <br>
+  <div class="name">
+    <h3>Name : </h3>
+    <%- product.name %>
+  </div>
+  <div class="desc">
+    <h3>Description: </h3>
+    <%- product.description %>
+  </div>
+  <div class="price">
+    <h3>Price</h3>
+    <%- product.price %>
+  </div>
+</div>
+
+<%- include ('../partials/footer') %>
